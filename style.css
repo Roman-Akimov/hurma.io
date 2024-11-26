@@ -1,0 +1,173 @@
+/* Общие стили */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff5e1;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Навигация */
+.navbar {
+  background: #ff914d;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.navbar .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* Герой секция */
+.hero {
+  background: url('16cadc98-c780-4702-8a00-118d7766431e.jpeg') center/cover no-repeat;
+  padding: 200px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.hero .btn {
+  padding: 15px 30px;
+  background-color: #ff914d;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #ff6700;
+}
+
+/* Секция заголовков */
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 50px;
+  color: #ff914d;
+  font-weight: 600;
+}
+
+/* Карточки */
+.card {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* Галерея */
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Контакты */
+.contact-details {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-details p {
+  font-size: 1.2rem;
+}
+
+.contact-details a {
+  color: #ff914d;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #ff6700;
+}
+
+/* Иконки */
+.contact-details i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Кнопка "Написать нам" */
+.contact-details button {
+  background-color: #ff914d;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  padding: 12px 30px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-details button:hover {
+  background-color: #ff6700;
+}
+
+/* Подвал */
+footer {
+  background-color: #ff914d;
+  color: white;
+  padding:15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Появление иконок снизу */
+.contact-details i {
+  visibility: hidden;
+}
+
+.contact-details:hover i {
+  visibility: visible;
+  transform: translateY(10px);
+}
