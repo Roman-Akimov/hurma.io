@@ -7,6 +7,108 @@ body {
   padding: 0;
 }
 
+/* Стили навигации */
+.navbar {
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  color: white;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+.navbar-brand:hover {
+  transform: scale(1.1);
+  color: #ffe680;
+}
+.nav-link {
+  color: white !important;
+  padding: 5px 10px;
+  display: inline-block;
+  position: relative;
+  text-decoration: none !important; 
+  transition: color 0.3s ease; 
+}
+
+.nav-link span {
+  display: inline-block; 
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover span {
+  transform: translateY(-5px); 
+}
+
+/* подпрыгивание при наведении */
+.nav-link:hover {
+  color: #ffe680 !important; 
+}
+
+/* Добавляем отступ для якорей */
+:target::before {
+  content: "";
+  display: block;
+  height: 80px; 
+  margin-top: -80px;
+}
+
+.nav-link:hover::before {
+  content: ''; 
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transform: translateY(-5px); 
+  z-index: -1; 
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 0; 
+  height: 2px;
+  background-color: #ffe680;
+  transition: width 0.3s ease; /* Плавное появление подчёркивания */
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  right: 0;
+}
+
+/* Показываем подчёркивание при наведении */
+.nav-link.active::after,
+.nav-link:hover::after {
+  width: 50%; 
+}
+.navbar-toggler {
+  border: none;
+  background-color: #ff8a00;
+}
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%27http%3A//www.w3.org/2000/svg%27 viewBox%3D%270 0 30 30%27%3E%3Cpath stroke%3D%27rgba%280, 0, 0, 0.5%29%27 stroke-width%3D%272%27 stroke-linecap%3D%27round%27 stroke-miterlimit%3D%2710%27 d%3D%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+}
+
+/* Стили для заголовка с баннером */
+header {
+  background: url('banner.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+header p {
+  font-size: 1.25rem;
+}
+
 /* Навигация */
 .navbar {
   background: #ff914d;
@@ -32,6 +134,86 @@ body {
   color: #ffd700;
   text-decoration: underline;
 }
+
+/* Стили для раздела "О нас" */
+.about-us {
+  background: #fff8e1; 
+  padding: 50px 0;
+  color: #333;
+}
+
+.about-us .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ff914d;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.about-text strong {
+  font-weight: bold;
+  color: #ff914d;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.benefits-list li {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 15px 0;
+}
+
+.benefits-list i {
+  color: #ff914d;
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+li {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+
+/* Стили для иконки */
+li i {
+  margin-right: 10px; 
+  color: #4CAF50; 
+}
+
+/* Стили для текста */
+li span {
+  font-size: 16px; /* Размер шрифта текста */
+}
+
+  
+
+
 
 /* Герой секция */
 .hero {
@@ -87,6 +269,13 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+.card-img-top {
+  width: 100%; 
+  height: 400px;
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
 .card-title {
   font-size: 1.3rem;
   font-weight: 500;
@@ -96,7 +285,119 @@ body {
   text-align: center;
 }
 
+.services {
+  background: #fff8e1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.service-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  color: #ff914d;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.service-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
 /* Галерея */
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+
+/* Стили для кнопок */
+.btn {
+  padding: 12px 25px;
+  background-color: #ff914d;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Увеличение кнопки при наведении */
+
+.btn:hover {
+  background-color: #ff6700;
+  transform: scale(1.05); 
+}
+
+.btn:focus {
+  outline: none; 
+}
+
+/* Карусель */
+.carousel-item img {
+  width: 100%; 
+  height: 400px; 
+  object-fit: cover; 
+}
+
+.carousel {
+  max-width: 600px; /*ширина карусели */
+  margin: 0 auto; 
+}
+
+.carousel-inner {
+  display: flex; 
+}
+
+.carousel-item {
+  width: 100%; 
+}
+
+/* Эффект увеличения при наведении */
+.carousel-item img:hover {
+  transform: scale(1.05); 
+}
+
+/* Закругление углов изображений везде */
+img {
+  border-radius: 10px; /* Можно изменить радиус для сильного закругления */
+  object-fit: cover; 
+}
+
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Контакты */
+
+/* Стили для футера */
 .gallery-item img {
   transition: transform 0.3s ease;
 }
@@ -106,25 +407,63 @@ body {
 }
 
 /* Контакты */
-.contact-details {
+.footer {
+  background-color: #ff914d; 
+  color: #fff; 
+  padding: 30px 0;
+}
+
+
+.footer-title {
+  font-size: 1.8rem;
   text-align: center;
-  margin-top: 30px;
+  color: white;
+  margin-bottom: 20px;
 }
 
-.contact-details p {
-  font-size: 1.2rem;
+.footer .contact-details {
+  margin-top: 10px;
+  text-align: center;
 }
 
-.contact-details a {
-  color: #ff914d;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.footer .contact-details p {
+  margin: 15px 0; 
+  font-size: 1.1rem; 
 }
 
-.contact-details a:hover {
-  color: #ff6700;
+/* Оранжевый для ссылок */
+.footer .contact-details a {
+  padding: 5px;
+  border-radius: 3px;
 }
+
+/* Золотистый при наведении */
+.footer .contact-details a:hover {
+  color: #ffd700; 
+}
+
+/* Разделительная линия */
+.footer .contact-details {
+  border-top: 1px solid #555; 
+  padding-top: 5px;
+}
+
+/* Линии между элементами */
+.footer .contact-details p:not(:last-child) {
+  border-bottom: 1px solid #555; 
+  padding-bottom: 10px;
+}
+
+.footer .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+/* Меняем цвет кнопки при наведении */
+.footer .btn:hover {
+  background-color: #ff914d; 
+}
+
 
 /* Иконки */
 .contact-details i {

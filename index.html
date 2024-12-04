@@ -6,6 +6,7 @@
     <meta name="description" content="Агентство 'Хурма' — организация незабываемых свиданий в Самаре. Романтика, комфорт и незабываемые впечатления." />
     <title>Свидание в Самаре | Event-агентство Хурма</title>
 
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,42 +16,49 @@
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAATnfCAD1+/wAtc/wASpv/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAIAABQUEAAAIiAAFEQQAgACAAFEREEiIAAAABFBEAIAAREAABAAAAETMxEAACAAFEREMxAAIAFERERDMQIiAUREREQxACAURERERDMQIBREREREQxAAFERERERDEAAUREQUREMQAAFEQQFEQQAAABEQABEQAAD/6wAA+8EAAPHBAAC7gAAAH8EAALj3AADgPQAAwB0AAIAIAACADQAAAAUAAAAHAAAABwAAAAcAAIIPAADHHwAA" rel="icon" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
 
   <body>
     <!-- Навигация -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Хурма</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutUs">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Услуги</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Галерея</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+ <!-- Заголовок с баннером -->
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://i.imgur.com/mUAm50X.png">
+      Хурма 
+    </a>
+    <button
+      class="navbar-toggler"  
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutUs"><span>О нас</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services"><span>Услуги</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery"><span>Галерея</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact"><span>Контакты</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!-- Герой секция -->
     <section class="hero">
@@ -59,12 +67,26 @@
     </section>
 
     <!-- О нас -->
-    <section id="aboutUs" class="container">
-      <h2 class="section-title">О нас</h2>
-      <p class="text-center">
-        Мы — агентство "Хурма", специализируемся на организации незабываемых свиданий. Романтика, комфорт и уникальные впечатления — всё, что вам нужно для идеального вечера.
-      </p>
-      <img src="https://i.pinimg.com/736x/bf/4c/bd/bf4cbd8f9cf1210a765c39f7b2f46546.jpg" class="d-block w-100 mt-4" alt="О нас">
+    <section id="aboutUs" class="about-us">
+      <div class="container">
+        <h2 class="section-title">О нас</h2>
+        <p class="about-text">
+          Мы компания, которая организует запоминающиеся свидания для пар, которые хотят внести яркие краски и разнообразие в серые будни 🤍
+          <br><br>
+          Вы стремитесь к романтике, чему-то новому и ярким эмоциям? Тогда вы попали по адресу! Наша команда готова создать для вас уникальные моменты, которые останутся в памяти на долгие годы.
+          <br><br>
+          <strong>Почему стоит выбрать нас?</strong>
+        </p>
+        
+        <ul class="benefits-list">
+          <li><i class="fas fa-check-circle"></i> Индивидуальный подход к каждому клиенту</li>
+          <li><i class="fas fa-check-circle"></i> Большой выбор мест и форматов для свиданий</li>
+          <li><i class="fas fa-check-circle"></i> Профессиональные организаторы, которые позаботятся о каждой детали</li>
+        </ul>
+        
+        <!-- Картинка хурмы пара -->
+       <!-- <img src="https://i.imgur.com/bztXDzE.jpeg" width="700" height="auto" class="d-block w-60" alt="..."> -->
+      </div>
     </section>
 
     <!-- Услуги -->
@@ -73,28 +95,31 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card">
-            <img src="https://i.pinimg.com/736x/82/3f/dc/823fdc6caa41031b846cf843e0baa233.jpg" class="card-img-top" alt="Свидание в ресторане">
+            <img src="https://i.imgur.com/QymlcCd.jpeg" class="card-img-top" alt="Свидание в ресторане">
             <div class="card-body">
               <h5 class="card-title">Романтическое свидание в ресторане</h5>
               <p class="card-text">Погрузитесь в атмосферу роскоши с ужином при свечах в лучших ресторанах города.</p>
+              <p class="service-price">Стоимость: 4000₽</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="https://i.pinimg.com/736x/82/3f/dc/823fdc6caa41031b846cf843e0baa233.jpg" class="card-img-top" alt="Прогулка на катере">
+            <img src="https://i.imgur.com/oT9mSV8.jpeg" class="card-img-top" alt="Прогулка на катере">
             <div class="card-body">
               <h5 class="card-title">Прогулка на катере</h5>
               <p class="card-text">Устроим романтическую прогулку по реке, наслаждайтесь прекрасным видом и компанией друг друга.</p>
+              <p class="service-price">Стоимость: 5000₽</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="https://i.pinimg.com/736x/82/3f/dc/823fdc6caa41031b846cf843e0baa233.jpg" class="card-img-top" alt="Вечер у костра">
+            <img src="https://i.imgur.com/tolHImk.jpeg" class="card-img-top" alt="Вечер у костра">
             <div class="card-body">
               <h5 class="card-title">Вечер у костра</h5>
               <p class="card-text">Романтическая встреча на природе с костром и звездным небом. Идеально для душевных бесед.</p>
+              <p class="service-price">Стоимость: 3000₽</p>
             </div>
           </div>
         </div>
@@ -102,33 +127,53 @@
     </section>
 
     <!-- Галерея -->
-    <section id="gallery" class="container">
-      <h2 class="section-title">Галерея</h2>
-      <div class="row">
-        <div class="col-md-4 gallery-item">
-          <img src="https://i.pinimg.com/736x/82/3f/dc/823fdc6caa41031b846cf843e0baa233.jpg" class="d-block w-100 mb-4" alt="Свидание 1">
-        </div>
-        <div class="col-md-4 gallery-item">
-          <img src="https://i.pinimg.com/736x/82/3f/dc/823fdc6caa41031b846cf843e0baa233.jpg" class="d-block w-100 mb-4" alt="Свидание 2">
-        </div>
-        <div class="col-md-4 gallery-item">
-          <img src="https://i.pinimg.com/736x/82/3f/dc/823fdc6caa41031b846cf843e0baa233.jpg" class="d-block w-100 mb-4" alt="Свидание 3">
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Галерея</h2>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.imgur.com/FTc7hYD.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.imgur.com/a0MBzio.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.imgur.com/9BaDCda.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <!-- Можно добавить больше изображений по необходимости -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
+    
 
     <!-- Контакты -->
-    <section id="contact" class="container">
-      <h2 class="section-title">Контакты</h2>
-      <p class="text-center">Свяжитесь с нами, чтобы заказать незабываемое свидание!</p>
-      <div class="contact-details text-center">
-        <p>Телефон: <a href="tel:+7933750690">+7 (933) 750-69-90</a>
-            Email: <a href="mailto:hurma-love@mail.ru">hurma-love@mail.ru</a></p>
-        <p>ВК: <a href="https://vk.com/hurmawithlove">hurma</a>
-        TG-bot: <a href="@hurma_love_bot">@hurma_love_bot</a></p>
-        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">Написать нам</button>
+    <footer id="contact" class="footer">
+      <div class="container">
+        <h2 class="footer-title">Контакты</h2>
+        <p class="text-center">Свяжитесь с нами, чтобы заказать незабываемое свидание!</p>
+        <div class="contact-details">
+          <p>
+            Телефон: <a href="tel:+7933750690">+7 (933) 750-69-90</a><br>
+            Email: <a href="mailto:hurma-love@mail.ru">hurma-love@mail.ru</a>
+          </p>
+          <p>
+            ВК: <a href="https://vk.com/hurmawithlove">hurma</a><br>
+            TG-bot: <a href="https://t.me/hurma_love_bot">@hurma_love_bot</a>
+          </p>
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">Написать нам</button>
+        </div>
       </div>
-    </section>
+    </footer>
 
     <!-- Модальное окно для контактов -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
@@ -159,11 +204,11 @@
       </div>
     </div>
 
-    <!-- Подвал -->
+    <!-- Подвал-->
     <footer>
       <p>&copy; 2024 Хурма — Все права защищены. <a href="#contact">Связаться с нами</a></p>
     </footer>
-
+   
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
